@@ -1,0 +1,6 @@
+name: TabFull
+version: '1.0-SNAPSHOT'
+main: com.awezarry.tabFull.TabFull
+api-version: '1.21'
+authors: [ Awezarry ]
+description: Primeiro Plugin
