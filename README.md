@@ -52,7 +52,7 @@ tabfull.reload - Permite usar o comando /tabfull reload
 Sinta-se à vontade para abrir issues ou pull requests com sugestões e melhorias.
 
 ## 📃 Licença
-Este projeto está sob uma [licença MIT](LICENSE.md).  
+Este projeto está sob uma [licença MIT](LICENSE).  
 
 ## 🔗 Links úteis
 [Plugin no Modrinth](https://modrinth.com/plugin/tab-full)
