@@ -17,12 +17,10 @@ public final class TabFull extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e){
-        e.getPlayer().setPlayerListHeaderFooter(ChatColor.GOLD + "" + ChatColor.BOLD +"§6NIGHTFALL\n§7Servidor Survival",
-                "§eSite: nightfall.com\n§fDiscord: discord.gg/nightfall");
 
         Player player = e.getPlayer();
-        String header = ChatColor.AQUA + "Bem-vindo " + player.getName();
-        String footer = ChatColor.GRAY + "Online: " + Bukkit.getOnlinePlayers().size();
+        String header = ChatColor.GOLD + "" + ChatColor.BOLD +"§6NIGHTFALL\n§7Servidor Factions" + ChatColor.AQUA + "\nBem-vindo " + player.getName();
+        String footer = ChatColor.GRAY + "\n§eSite: Em Manutenção\n§fDiscord: https://discord.gg/4cSu6yZy9S" + "\nOnline: " + Bukkit.getOnlinePlayers().size() + "Ping: " + player.getPing();
         player.setPlayerListHeaderFooter(header, footer);
     }
 }
