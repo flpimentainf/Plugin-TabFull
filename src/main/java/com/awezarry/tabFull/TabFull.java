@@ -20,7 +20,7 @@ public final class TabFull extends JavaPlugin implements Listener {
 
         Player player = e.getPlayer();
 
-        String header = ChatColor.DARK_RED + "" + ChatColor.BOLD + "✦ NIGHTFALL ✦\n" +
+        String header = ChatColor.DARK_RED + "" + ChatColor.BOLD + "✦ NYX WARS ✦\n" +
                 ChatColor.GRAY + "Servidor Factions\n" +
                 ChatColor.DARK_AQUA + "Bem-vindo, " + ChatColor.AQUA + player.getName() + "!";
 
