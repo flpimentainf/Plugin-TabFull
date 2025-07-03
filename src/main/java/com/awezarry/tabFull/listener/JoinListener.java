@@ -22,16 +22,13 @@ public class JoinListener implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
 
-        // Mensagem no chat
         String msg = plugin.getConfig().getString("join.message");
         player.sendMessage(ConfigManager.color(ConfigManager.format(msg, player.getName(), player.getPing(), Bukkit.getOnlinePlayers().size())));
 
-        // Título
         String title = plugin.getConfig().getString("join.title");
         String subtitle = plugin.getConfig().getString("join.subtitle");
         player.sendTitle(ConfigManager.color(title), ConfigManager.color(subtitle), 10, 70, 20);
 
-        // Som
         String soundName = plugin.getConfig().getString("join.sound");
         try {
             Sound sound = Sound.valueOf(soundName.toUpperCase());
@@ -40,7 +37,6 @@ public class JoinListener implements Listener {
             plugin.getLogger().warning("Som inválido em config.yml: " + soundName);
         }
 
-        // TAB personalizado
         TabManager.setTabFor(player);
     }
 }
