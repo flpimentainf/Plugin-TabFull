@@ -6,10 +6,22 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class TabFull extends JavaPlugin {
 
+    private static TabFull instance;
+
     @Override
     public void onEnable() {
-        // Registro de eventos
+        instance = this;
+
+        // Carrega config.yml
+        saveDefaultConfig();
+
+        // Eventos
         Bukkit.getPluginManager().registerEvents(new JoinListener(this), this);
-        getLogger().info("TabFull ativado com sucesso!");
+
+        getLogger().info("TabFull com config ativado.");
+    }
+
+    public static TabFull getInstance() {
+        return instance;
     }
 }
