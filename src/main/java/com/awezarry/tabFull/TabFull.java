@@ -33,5 +33,18 @@ public final class TabFull extends JavaPlugin implements Listener {
                 ChatColor.DARK_GRAY + "━━━━━━━━━━━━━━━━━━━━━━";
 
         player.setPlayerListHeaderFooter(header, footer);
+
+        player.sendTitle(ChatColor.RED + "✦ NYX WARS ✦",
+                ChatColor.GRAY + "Servidor Factions PvP",
+                10,
+                70,
+                20);
+
+
+        if (!player.hasPlayedBefore()) {
+            player.sendMessage(ChatColor.GREEN + "Essa é sua primeira vez aqui, " + player.getName() + "! Divirta-se!");
+        }
+        player.sendMessage(ChatColor.GOLD + "Bem-vindo ao " + ChatColor.RED + "NYX WARS" + ChatColor.GOLD + ", " + ChatColor.AQUA + player.getName() + "!");
+        player.sendMessage(ChatColor.GRAY + "Use " + ChatColor.YELLOW + "/ajuda" + ChatColor.GRAY + " para ver os comandos disponíveis.");
     }
 }
