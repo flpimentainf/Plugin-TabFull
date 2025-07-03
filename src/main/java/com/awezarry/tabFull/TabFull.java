@@ -2,6 +2,7 @@ package com.awezarry.tabFull;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -46,5 +47,8 @@ public final class TabFull extends JavaPlugin implements Listener {
         }
         player.sendMessage(ChatColor.GOLD + "Bem-vindo ao " + ChatColor.RED + "NYX WARS" + ChatColor.GOLD + ", " + ChatColor.AQUA + player.getName() + "!");
         player.sendMessage(ChatColor.GRAY + "Use " + ChatColor.YELLOW + "/ajuda" + ChatColor.GRAY + " para ver os comandos disponíveis.");
+
+        player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
+
     }
 }
