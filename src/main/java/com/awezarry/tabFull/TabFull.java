@@ -7,7 +7,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 
 public final class TabFull extends JavaPlugin implements Listener {
 
@@ -49,6 +52,16 @@ public final class TabFull extends JavaPlugin implements Listener {
         player.sendMessage(ChatColor.GRAY + "Use " + ChatColor.YELLOW + "/ajuda" + ChatColor.GRAY + " para ver os comandos disponíveis.");
 
         player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
+        player.addPotionEffect(new PotionEffect(PotionEffectType.GLOWING, 60, 0, false, false));
+
+        getLogger().info("Jogador " + player.getName() + " entrou no servidor.");
+    }
+
+    @EventHandler
+    public void onQuit(PlayerQuitEvent e){
+        Player player = e.getPlayer();
+
+        getLogger().info("Jogador " + player.getName() + " Saiu do servidor.");
 
     }
 }
