@@ -4,6 +4,7 @@ import com.awezarry.tabFull.ConfigManager;
 import com.awezarry.tabFull.TabFull;
 import com.awezarry.tabFull.managers.TabManager;
 import com.awezarry.tabFull.managers.BossBarManager;
+import com.awezarry.tabFull.managers.FireWorksManager;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
@@ -40,5 +41,6 @@ public class JoinListener implements Listener {
 
         TabManager.setTabFor(player);
         BossBarManager.setBossBar(player);
+        FireWorksManager.setFireWork(player);
     }
 }
