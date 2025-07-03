@@ -34,5 +34,4 @@ public final class TabFull extends JavaPlugin implements Listener {
 
         player.setPlayerListHeaderFooter(header, footer);
     }
-    }
 }
