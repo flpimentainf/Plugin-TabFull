@@ -12,10 +12,8 @@ public final class TabFull extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        // Carrega config.yml
         saveDefaultConfig();
 
-        // Eventos
         Bukkit.getPluginManager().registerEvents(new JoinListener(this), this);
 
         getLogger().info("TabFull com config ativado.");
