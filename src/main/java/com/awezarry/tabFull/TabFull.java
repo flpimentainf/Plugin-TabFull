@@ -19,8 +19,20 @@ public final class TabFull extends JavaPlugin implements Listener {
     public void onJoin(PlayerJoinEvent e){
 
         Player player = e.getPlayer();
-        String header = ChatColor.GOLD + "" + ChatColor.BOLD +"§6NIGHTFALL\n§7Servidor Factions" + ChatColor.AQUA + "\nBem-vindo " + player.getName();
-        String footer = ChatColor.GRAY + "\n§eSite: Em Manutenção\n§fDiscord: https://discord.gg/4cSu6yZy9S" + "\nOnline: " + Bukkit.getOnlinePlayers().size() + "Ping: " + player.getPing();
+
+        String header = ChatColor.DARK_RED + "" + ChatColor.BOLD + "✦ NIGHTFALL ✦\n" +
+                ChatColor.GRAY + "Servidor Factions\n" +
+                ChatColor.DARK_AQUA + "Bem-vindo, " + ChatColor.AQUA + player.getName() + "!";
+
+        String footer = ChatColor.DARK_GRAY + "━━━━━━━━━━━━━━━━━━━━━━\n" +
+                ChatColor.GOLD + "🌐 Site: " + ChatColor.YELLOW + "Em manutenção\n" +
+                ChatColor.BLUE + "💬 Discord: " + ChatColor.AQUA + "discord.gg/4cSu6yZy9S\n" +
+                ChatColor.GREEN + "👥 Online: " + Bukkit.getOnlinePlayers().size() +
+                ChatColor.DARK_GRAY + " │ " +
+                ChatColor.LIGHT_PURPLE + "📶 Ping: " + ChatColor.WHITE + player.getPing() + "ms\n" +
+                ChatColor.DARK_GRAY + "━━━━━━━━━━━━━━━━━━━━━━";
+
         player.setPlayerListHeaderFooter(header, footer);
+    }
     }
 }
