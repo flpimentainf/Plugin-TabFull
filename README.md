@@ -1,10 +1,10 @@
 # TabFull
 
-Um plugin simples e leve para servidores Minecraft que exibe a lista completa de jogadores no TAB, sem truncar nomes ou ocultar jogadores.
+Um plugin simples e leve para servidores Minecraft.
 
 ## 📦 Versão
 
-`1.1.0`
+`1.1.1`
 
 ## 📁 Descrição
 
@@ -14,8 +14,9 @@ O `TabFull` é um plugin desenvolvido para servidores Bukkit/Spigot/Paper que ga
 
 - Tab Personalizavel
 - Mensagens de Chat e Tela Personalizavel
-- Som do Jogador quando Entra Personalizavel
-- BossBar e FireWorks não Pesonalizavel (recebera atualização para personalização)
+- Som do Jogador quando Entra Personalizavel[]
+- BossBar Personalizavel
+- FireWorks não Pesonalizavel (recebera atualização para personalização)
 - Mostra todos os jogadores conectados no TAB.
 - Compatível com versões recentes do Minecraft.
 - Leve e fácil de instalar.
