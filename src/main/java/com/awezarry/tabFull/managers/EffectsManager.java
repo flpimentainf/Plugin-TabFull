@@ -10,7 +10,7 @@ public class EffectsManager {
     public static void setEffect(Player player) {
         player.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SPEED,
                 200,
-                3));
+                4));
 
     }
 }

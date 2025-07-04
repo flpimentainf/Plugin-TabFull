@@ -4,7 +4,7 @@ Um plugin simples e leve para servidores Minecraft.
 
 ## 📦 Versão
 
-`1.1.1`
+`1.1.2`
 
 ## 📁 Descrição
 
