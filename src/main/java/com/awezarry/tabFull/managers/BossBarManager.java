@@ -14,13 +14,32 @@ public class BossBarManager {
     private static BossBar bossBar;
 
     public static void setBossBar(Player player) {
+
+        String txtBar = ChatColor.translateAlternateColorCodes('&',
+                TabFull.getInstance().getConfig().getString("bossBar.txtbar"));
+        String colorBarStr = TabFull.getInstance().getConfig().getString("bossBar.colorbar");
+        String sizeBarStr = TabFull.getInstance().getConfig().getString("bossBar.sizebar");
+        double progressBar = TabFull.getInstance().getConfig().getDouble("bossBar.progressbar");
+
+        BarColor colorBar;
+        BarStyle styleBar;
+
+
+        try {
+            colorBar = BarColor.valueOf(colorBarStr.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            colorBar = BarColor.RED;
+        }
+
+        try {
+            styleBar = BarStyle.valueOf(sizeBarStr.toUpperCase());
+        } catch (IllegalArgumentException e) {
+            styleBar = BarStyle.SOLID;
+        }
+
         if (bossBar == null) {
-            bossBar = Bukkit.createBossBar(
-                    ChatColor.DARK_RED + "☾ " + ChatColor.RED + "Bem-vindo ao " + ChatColor.DARK_GRAY + "NYX WARS" + ChatColor.DARK_RED + " ☽",
-                    BarColor.RED,
-                    BarStyle.SEGMENTED_10
-            );
-            bossBar.setProgress(0.5);
+            bossBar = Bukkit.createBossBar(txtBar, colorBar, styleBar);
+            bossBar.setProgress(Math.max(0.0, Math.min(progressBar, 1.0)));
         }
 
         bossBar.addPlayer(player);
