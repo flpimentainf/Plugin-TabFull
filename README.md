@@ -17,6 +17,7 @@ O `TabFull` é um plugin desenvolvido para servidores Bukkit/Spigot/Paper que ga
 - Som do Jogador quando Entra Personalizavel[]
 - BossBar Personalizavel
 - FireWorks não Pesonalizavel (recebera atualização para personalização)
+- Efeitos Quando jogador Entra no servidor não Personalizavel (recebera atualização para personalização)
 - Mostra todos os jogadores conectados no TAB.
 - Compatível com versões recentes do Minecraft.
 - Leve e fácil de instalar.
@@ -34,11 +35,11 @@ O `TabFull` é um plugin desenvolvido para servidores Bukkit/Spigot/Paper que ga
 - Minecraft 1.21.7
 - Servidor Spigot, Paper ou compatível.
 
-## 🧪 Comandos (Em desenvolvimento)
+## 🧪 Comandos (EM DESENVOLVIMENTO)
+/links - Mostra os Links (discord, site e etc(EM DESENVOLVIMENTO))
+/tabfull reload - Recarrega a configuração (EM DESENVOLVIMENTO)
 
-/tabfull reload - Recarrega a configuração (Em Desenvolvimento)
-
-## 📝 Permissões (Em desenvolvimento)
+## 📝 Permissões (EM DESENVOLVIMENTO)
 
 tabfull.reload - Permite usar o comando /tabfull reload
 
