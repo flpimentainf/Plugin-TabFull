@@ -1,11 +1,11 @@
 tab:
-  header: "\n&8━━━━━━━━━━━━━━━━━━━━━━\n&4&l✦ NYX WARS ✦\n&7Servidor Factions\n&3Bem-vindo, &b%player%\n&8━━━━━━━━━━━━━━━━━━━━━━\n"
+  header: "\n&8━━━━━━━━━━━━━━━━━━━━━━\n&4&l✦ ValorianCraft ✦\n&7Servidor Survival\n&3Bem-vindo, &b%player%\n&8━━━━━━━━━━━━━━━━━━━━━━\n"
   footer: "&8━━━━━━━━━━━━━━━━━━━━━━\n&6🌐 Site: &e%site%\n&9💬 Discord: &b%discord%\n&a👥 Online: %online% &8│ &d📶 Ping: &f%ping%ms\n&8━━━━━━━━━━━━━━━━━━━━━━"
 
 join:
-  title: "&4✦ NYX WARS ✦"
-  subtitle: "&7Servidor Factions"
-  message: "&6Bem-vindo ao &cNYX WARS&6, &b%player%!"
+  title: "&4✦ ValorianCraft ✦"
+  subtitle: "&7Servidor Survival"
+  message: "&6Bem-vindo ao &cValorianCraft&6, &b%player%!"
   sound: "ENTITY_PLAYER_LEVELUP"
 
 links:
@@ -13,7 +13,7 @@ links:
   discord: "discord.gg/4cSu6yZy9S"
 
 bossBar:
-  txtbar: "§cBem-vindo ao §8NYX WARS" #(texto da bar)
+  txtbar: "§cBem-vindo ao §8ValorianCraft" #(texto da bar)
   colorbar: "RED" #(cor da bar)
   sizebar: "SEGMENTED_10" #(tamanho da bar)
   progressbar: 0.5 #(0 ate 1)
